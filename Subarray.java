@@ -11,7 +11,7 @@ public class Subarray {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        int Current_sum=0,MAximum_sum=0;
+        int Current_sum=arr[0],MAximum_sum=arr[0];
         for(int i=1;i<n;i++){
             Current_sum=Math.max(arr[i],Current_sum+arr[i]);
             MAximum_sum=Math.max(MAximum_sum,Current_sum);
